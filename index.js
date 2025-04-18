@@ -8,10 +8,11 @@ const StagiairesRoutes = require("./Route/StagiairesRoute");
 app.use("/stagiaires", StagiairesRoutes);
 
 app.get("/", (req, res) => {
-    res.send("Hello World! test ok, nous pouvons continuer !");
-  });
+  res.send("Hello World! test ok, nous pouvons continuer !");
+});
 
-
-  app.listen(process.env.PORT, () => {
-    console.log(`✅ Votre serveur est lancé sur http://127.0.0.1:${process.env.PORT}`);
-  });
+app.listen(process.env.PORT, () => {
+  console.log(
+    `✅ Votre serveur est lancé sur http://127.0.0.1:${process.env.PORT}`
+  );
+});
