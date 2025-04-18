@@ -9,5 +9,9 @@ class StagiairesService {
   async addStagiaires(stagiaires) {
     return await Stagiaires.create(stagiaires);
   }
+
+  async getAllStagiairesById(stagiairesId) {
+    return await Stagiaires.findByPk(stagiairesId);
+  }
 }
 module.exports = new StagiairesService();

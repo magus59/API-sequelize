@@ -10,4 +10,8 @@ router.post("/", (request, response) => {
   StagiairesController.addStagiaires(request, response);
 });
 
+router.get("/:id", (request, response) => {
+    StagiairesController.getAllStagiairesById(request, response);
+});
+
 module.exports = router;
